@@ -72,7 +72,7 @@ export function AuditLogs({ onClose }: AuditLogsProps) {
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center">
-          <AlertCircle className="h-8 w-8 text-indigo-600 mr-2" />
+          <AlertCircle className="h-8 w-8 text-black-600 mr-2" />
           <h2 className="text-2xl font-bold">Audit Logs</h2>
         </div>
         <button
@@ -90,7 +90,7 @@ export function AuditLogs({ onClose }: AuditLogsProps) {
             placeholder="Search logs..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+            className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black-500 focus:border-transparent"
           />
           <Search className="h-5 w-5 text-gray-400 absolute left-3 top-2.5" />
         </div>
@@ -98,7 +98,7 @@ export function AuditLogs({ onClose }: AuditLogsProps) {
 
       {loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black-600"></div>
         </div>
       ) : (
         <div className="space-y-4">

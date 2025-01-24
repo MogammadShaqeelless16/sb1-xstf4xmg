@@ -130,13 +130,13 @@ export function TodoList({ onClose }: TodoListProps) {
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center">
-          <CheckSquare className="h-8 w-8 text-indigo-600 mr-2" />
+          <CheckSquare className="h-8 w-8 text-black mr-2" />
           <h2 className="text-2xl font-bold">Todo List</h2>
         </div>
         <div className="flex items-center gap-2">
           <button
             onClick={() => setShowAddForm(true)}
-            className="p-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700"
+            className="p-2 bg-black text-white rounded-full hover:bg-black"
           >
             <Plus className="h-5 w-5" />
           </button>
@@ -175,7 +175,7 @@ export function TodoList({ onClose }: TodoListProps) {
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black"
                 />
               </div>
               <div>
@@ -184,7 +184,7 @@ export function TodoList({ onClose }: TodoListProps) {
                   value={formData.description}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                   rows={3}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black"
                 />
               </div>
               <div>
@@ -193,7 +193,7 @@ export function TodoList({ onClose }: TodoListProps) {
                   type="datetime-local"
                   value={formData.due_date}
                   onChange={(e) => setFormData({ ...formData, due_date: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black"
                 />
               </div>
               <div className="flex justify-end gap-2">
@@ -210,7 +210,7 @@ export function TodoList({ onClose }: TodoListProps) {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
+                  className="px-4 py-2 bg-black text-white rounded-md hover:bg-black"
                 >
                   {editingTodo ? 'Update' : 'Add'} Todo
                 </button>
@@ -222,7 +222,7 @@ export function TodoList({ onClose }: TodoListProps) {
 
       {loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black"></div>
         </div>
       ) : (
         <div className="space-y-4">

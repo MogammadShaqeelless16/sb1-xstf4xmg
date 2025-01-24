@@ -29,9 +29,17 @@ export function Login() {
   return (
     <div className="min-h-screen bg-background flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="flex justify-center">
-          <LogIn className="h-12 w-12 text-primary" />
-        </div>
+              {/* Huble Logo as a clickable link */}
+      <div className="flex justify-center mt-6">
+        <Link to="https://213255.fs1.hubspotusercontent-na1.net/hubfs/213255/__hs-marketplace__/Huble_Logo_Digital_PNG_Dark-1.png" target="_blank">
+          <img
+            src="https://213255.fs1.hubspotusercontent-na1.net/hubfs/213255/__hs-marketplace__/Huble_Logo_Digital_PNG_Dark-1.png"
+            alt="Huble Logo"
+            className="h-16" // Adjust height as needed
+          />
+        </Link>
+      </div>
+
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Sign in to your account
         </h2>
@@ -42,6 +50,8 @@ export function Login() {
           </Link>
         </p>
       </div>
+
+
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="card">

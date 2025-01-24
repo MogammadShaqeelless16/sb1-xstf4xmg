@@ -40,7 +40,7 @@ export function Dashboard() {
               <span className="text-gray-700 mr-4">{user?.email}</span>
               <button
                 onClick={handleSignOut}
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-black"
               >
                 <LogOut className="h-4 w-4 mr-2" />
                 Sign out
@@ -66,14 +66,14 @@ export function Dashboard() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="text-center mb-8">
-                  <Brain className="h-16 w-16 text-indigo-600 mx-auto mb-4" />
+                  <Brain className="h-16 w-16 text-black mx-auto mb-4" />
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">Quiz Challenge</h2>
                   <p className="text-gray-600">Test your knowledge across different categories</p>
                 </div>
                 <div className="flex justify-center">
                   <button
                     onClick={() => setShowQuiz(true)}
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-black hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                   >
                     Start Quiz
                   </button>
@@ -82,14 +82,14 @@ export function Dashboard() {
 
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="text-center mb-8">
-                  <Film className="h-16 w-16 text-indigo-600 mx-auto mb-4" />
+                  <Film className="h-16 w-16 text-black mx-auto mb-4" />
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">Movie Catalog</h2>
                   <p className="text-gray-600">Explore and discover your favorite movies</p>
                 </div>
                 <div className="flex justify-center">
                   <button
                     onClick={() => setShowMovies(true)}
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-black hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                   >
                     Browse Movies
                   </button>
@@ -98,14 +98,14 @@ export function Dashboard() {
 
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="text-center mb-8">
-                  <CheckSquare className="h-16 w-16 text-indigo-600 mx-auto mb-4" />
+                  <CheckSquare className="h-16 w-16 text-black mx-auto mb-4" />
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">Todo List</h2>
                   <p className="text-gray-600">Manage your tasks and stay organized</p>
                 </div>
                 <div className="flex justify-center">
                   <button
                     onClick={() => setShowTodos(true)}
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-black hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                   >
                     View Todos
                   </button>
@@ -114,14 +114,14 @@ export function Dashboard() {
 
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="text-center mb-8">
-                  <Users className="h-16 w-16 text-indigo-600 mx-auto mb-4" />
+                  <Users className="h-16 w-16 text-black mx-auto mb-4" />
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">User Management</h2>
                   <p className="text-gray-600">View and manage user accounts</p>
                 </div>
                 <div className="flex justify-center">
                   <button
                     onClick={() => setShowUsers(true)}
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-black hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                   >
                     Manage Users
                   </button>
@@ -130,14 +130,14 @@ export function Dashboard() {
 
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="text-center mb-8">
-                  <AlertCircle className="h-16 w-16 text-indigo-600 mx-auto mb-4" />
+                  <AlertCircle className="h-16 w-16 text-black mx-auto mb-4" />
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">Audit Logs</h2>
                   <p className="text-gray-600">Monitor application events and errors</p>
                 </div>
                 <div className="flex justify-center">
                   <button
                     onClick={() => setShowAuditLogs(true)}
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-black hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                   >
                     View Logs
                   </button>
